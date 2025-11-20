@@ -73,11 +73,11 @@ app.use((err, req, res, next) => {
 });
 
 // Start server
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
   console.log(`🚀 Server is running on port ${PORT}`);
-  console.log(`📍 Health check: http://localhost:${PORT}/api/health`);
-  console.log(`📍 Register API: http://localhost:${PORT}/api/auth/register`);
-  console.log(`📍 Login API: http://localhost:${PORT}/api/auth/login`);
+  console.log(`📍 Health check: http://16.16.138.135:${PORT}/api/health`);
+  console.log(`📍 Register API: http://16.16.138.135:${PORT}/api/auth/register`);
+  console.log(`📍 Login API: http://16.16.138.135:${PORT}/api/auth/login`);
 });
 
 module.exports = app;
