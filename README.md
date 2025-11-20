@@ -1,0 +1,1 @@
+# umiyaji-dining-hall-node-owner
